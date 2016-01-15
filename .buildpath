@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<buildpath>
-	<buildpathentry kind="src" path=""/>
-	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
-</buildpath>
+function winner($token,$position) {
+  $won = false;
+  if (($position[0] == $token) && 
+      ($position[1] == $token) && 
+      ($position[2] == $token)) {
+    $won = true;
+  } else if (($position[3] == $token) && 
+      ($position[4] == $token) && 
+      ($position[5] == $token)) {
+...
+  }
+  return $won;
+}
